@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!--  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--  -->
+    <!--  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=IBM+Plex+Sans:wght@300&family=Inter:wght@300&family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!--  -->
+    <title>Loopstudios landing page</title>
+  </head>
+  <body>
+    <header class="relative" id="about">
+      <nav
+        class="absolute flex flex-row justify-between items-center p-6 md:p-10 lg:p-28 left-0 right-0"
+      >
+        <div>
+          <img src="./img/logo.svg" alt="logo" class="w-full" />
+        </div>
+
+        <div
+          class="hidden flex-row justify-center items-center space-x-10 text-white font-bold visited:hidden md:flex"
+        >
+          <a href="#" class="active:text-black hover:underline">About</a>
+          <a href="#Careers" class="active:text-black hover:underline"
+            >Careers</a
+          >
+          <a href="#" class="active:text-black hover:underline">Events</a>
+          <a href="#Product" class="active:text-black hover:underline"
+            >Product</a
+          >
+          <a href="#Support" class="active:text-black hover:underline"
+            >Support</a
+          >
+        </div>
+
+        <img
+          src="./img/icon-hamburger.svg"
+          alt="hamburger"
+          class="block md:hidden"
+          onclick="hamburgerClcik()"
+        />
+      </nav>
+    </header>
+
+    <main class="bg-img">
+      <div
+        class="hidden h-full fixed z-20 w-full bg-black menu flex-col items-start justify-center space-y-11 p-4"
+      >
+        <div
+          class="flex flex-row justify-between absolute top-12 right-0 left-0 mx-12"
+        >
+          <div class="w-1/2">
+            <img src="img/logo.svg" alt="close" />
+          </div>
+          <div class="w-1/2 flex justify-end">
+            <img
+              src="img/icon-close.svg"
+              alt="close"
+              onclick="hamburgerClcikOut()"
+            />
+          </div>
+        </div>
+        <a href="#About" class="text-white text-2xl">About</a>
+        <a href="#Careers" class="text-white text-2xl">Careers</a>
+        <a href="#" class="text-white text-2xl">Events</a>
+        <a href="#Product" class="text-white text-2xl">Product</a>
+        <a href="#Support" class="text-white text-2xl">Support</a>
+      </div>
+
+      <div
+        class="flex flex-col justify-center items-center md:items-start text-container md:pl-28 md:pt-32"
+      >
+        <div
+          class="text-4xl md:text-6xl lg:text-6xl font-semibold text-white border border-solid border-white p-3 md:p-20 max-w-xs md:max-w-xl"
+        >
+          <h1 class="hover:underline">IMMERSIVE</h1>
+          <h1 class="hover:underline">EXPERINCES</h1>
+          <h1 class="hover:underline">THAT DELIVER</h1>
+        </div>
+      </div>
+    </main>
+
+    <!-- section-1 -->
+
+    <section id="Careers">
+      <div class="flex flex-col md:flex-row justify-center my-28">
+        <div>
+          <img src="./img/image-interactive.jpg" alt="" />
+        </div>
+
+        <div
+          class="max-w-xl flex flex-col justify-center items-center mx-auto md:mx-0 md:justify-end md:items-start"
+        >
+          <div
+            class="text-center md:text-left max-w-lg p-10 md:-ml-32 bg-white"
+          >
+            <h1 class="text-2xl md:text-5xl">THE LEADERIN INTERACTIVE VR</h1>
+
+            <p class="pt-10 opacity-60">
+              founded in 2021 ,Loopstudios has been producing world-class
+              virtual reality project for some of the best companiners around
+              the globe. Our award-winning crestions have transformed businesses
+              through digital espriences that bind to their brand.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section-1 -->
+
+    <!-- section-2 -->
+    <section id="Product">
+      <div class="w-full mx-auto">
+        <div class="flex flex-row justify-between items-center p-3 md:p-10">
+          <h1 class="text-xl md:text-3xl">OUR CREATIONS</h1>
+
+          <button
+            class="border border-solid border-black p-2 w-24 hover:bg-black hover:text-white transition-all md:w-32"
+          >
+            SEE ALL
+          </button>
+        </div>
+
+        <div class="main-1 md:p-10">
+          <div class="lg:grid lg:grid-cols-4 lg:grid-rows-2 lg:gap-6 mx-auto">
+            <div class="img-1 flex flex-col justify-end items-start">
+              <div
+                class="flex flex-row md:flex-col text-white w-auto m-6 md:m-5 lg:m-10 opacity-80"
+              >
+                <p class="text-4xl font-medium">DEEP</p>
+                <p class="text-4xl font-medium">EARTH</p>
+              </div>
+            </div>
+
+            <div class="img-2 flex flex-col justify-end items-start">
+              <div
+                class="flex flex-row md:flex-col text-white m-6 md:m-5 lg:m-10 opacity-80"
+              >
+                <p class="text-4xl font-medium">NIGHT</p>
+                <p class="text-4xl font-medium">ARCARD</p>
+              </div>
+            </div>
+
+            <div class="img-3 flex flex-col justify-end items-start">
+              <div
+                class="flex flex-row md:flex-col text-white m-6 md:m-5 lg:m-10 opacity-80"
+              >
+                <p class="text-4xl font-medium">SOCCER</p>
+                <p class="text-4xl font-medium">TEAM VR</p>
+              </div>
+            </div>
+
+            <div class="img-4 flex flex-col justify-end items-start">
+              <div
+                class="flex flex-row md:flex-col text-white m-6 md:m-5 lg:m-10 opacity-80"
+              >
+                <p class="text-4xl font-medium">THE</p>
+                <p class="text-4xl font-medium">GRID</p>
+              </div>
+            </div>
+
+            <div class="img-5 flex flex-col justify-end items-start">
+              <div
+                class="flex flex-row md:flex-col text-white m-6 md:m-5 lg:m-10 opacity-80"
+              >
+                <p class="text-3xl font-medium">FROM UP</p>
+                <p class="text-3xl font-medium">ABOVE VR</p>
+              </div>
+            </div>
+
+            <div class="img-6 flex flex-col justify-end items-start">
+              <div
+                class="flex flex-row md:flex-col text-white m-6 md:m-5 lg:m-10 opacity-80"
+              >
+                <p class="text-4xl font-medium">POCKET</p>
+                <p class="text-3xl font-medium">BOREALIS</p>
+              </div>
+            </div>
+
+            <div class="img-7 flex flex-col justify-end items-start">
+              <div
+                class="flex flex-row md:flex-col text-white m-6 md:m-5 lg:m-10 opacity-80"
+              >
+                <p class="text-4xl font-medium">THE</p>
+                <p class="text-3xl font-medium">CURIOSITY</p>
+              </div>
+            </div>
+
+            <div class="img-8 flex flex-col justify-end items-start">
+              <div
+                class="flex flex-row md:flex-col text-white m-6 md:m-5 lg:m-10 opacity-80"
+              >
+                <p class="text-4xl font-medium">MAKE IT</p>
+                <p class="text-4xl font-medium">FISHEYE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section-2 -->
+
+    <footer id="Support">
+      <div
+        class="bg-black flex flex-col md:flex-row items-center md:justify-between p-10"
+      >
+        <div
+          class="flex flex-col justify-center items-center md:items-start w-auto"
+        >
+          <img src="./img/logo.svg" alt="logo" />
+
+          <div class="text-white flex flex-row space-x-2 md:space-x-4 py-4">
+            <a href="#about" class="active:text-black hover:underline">About</a>
+            <a href="#Careers" class="active:text-black hover:underline"
+              >Careers</a
+            >
+            <a href="#" class="active:text-black hover:underline">Events</a>
+            <a href="#Product" class="active:text-black hover:underline"
+              >Product</a
+            >
+            <a href="#Support" class="active:text-black hover:underline"
+              >Support</a
+            >
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center md:items-end">
+          <div class="flex flex-row space-x-3 items-end justify-end">
+            <img src="./img/icon-facebook.svg" alt="icon-facebook" />
+            <img src="./img/icon-instagram.svg" alt="icon-instagram" />
+            <img src="./img/icon-pinterest.svg" alt="icon-pinterest" />
+            <img src="./img/icon-twitter.svg" alt="icon-twitter" />
+          </div>
+
+          <div class="text-white pt-3 opacity-70 text-xs md:text-sm">
+            <p>@2021 Loopstudios.All right reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- js -->
+    <script src="scrite.js"></script>
+  </body>
+</html>
